@@ -1,0 +1,65 @@
+.boardCell {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    background-color: #888888;
+    text-align: center;
+}
+
+.boardCol {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.boardRow {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.index{
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+}
+
+td{
+    text-align: center;
+}
+
+#boardCells{
+    position: relative;
+    top: 5%;
+    left: 130px;
+}
+
+td[color='Blue']{
+    color: blue;
+}
+td[color='Red']{
+    color: red;
+}
+td[color='Green']{
+    color: green;
+}
+td[color='White']{
+    color: white;
+}
+td[color='Black']{
+    color: black;
+}
+td[color='Purple']{
+    color: purple;
+}
+td[color='Orange']{
+    color: orange;
+}

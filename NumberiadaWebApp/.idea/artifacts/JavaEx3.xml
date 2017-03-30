@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="JavaEx3">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaEx3</output-path>
+    <root id="archive" name="JavaEx3.war">
+      <element id="artifact" artifact-name="WebApp:war exploded" />
+    </root>
+  </artifact>
+</component>

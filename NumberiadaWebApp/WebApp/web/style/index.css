@@ -1,0 +1,76 @@
+.LoginPage {
+    background: lightblue;
+    border: ridge black;
+    border-radius: 70px;
+    width: 550px;
+    position: relative;
+    margin: auto;
+    top: 100px;
+    align-content: center;
+
+    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+
+.welcomeArea{
+    position: relative;
+    align-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: #FFD700;
+    text-shadow: 3px 2px black;
+}
+
+.loginTitleArea{
+    position: relative;
+    align-content: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+#userNameArea {
+    position: relative;
+    font-family: sans-serif;
+    align-items: center;
+}
+
+p {
+    position: relative;
+    align-content: center;
+}
+
+#userName {
+    font-family: sans-serif;
+    position: relative;
+    align: left
+
+}
+
+#playerTypeArea {
+    position: relative;
+    left: 20px;
+    font-family: sans-serif;
+}
+
+.loginArea{
+    position: relative;
+    left: 70px;
+}
+.login{
+    left: 150px;
+    position: relative;
+
+}
+
+#logIn{
+    width:100px;
+    height:30px;
+}
+
+span.label.important {
+    left: -70px;
+    position: relative;
+}

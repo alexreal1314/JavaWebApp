@@ -1,0 +1,88 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: chenn
+  Date: 09/10/2016
+  Time: 14:45
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
+<html>
+<%@page import="Utils.*, Constants.*" %>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel='stylesheet' type='text/css' href='style/gamesRoom.css' />
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+
+    <title>Games Room</title>
+    <script src="script/jquery-2.0.3.min.js"></script>
+    <script src="script/gamesRoom.js"></script>
+    <script src="script/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="titlesAndLogoutArea">
+    <div class="titleArea">
+        <h1> Numberiada Menu</h1>
+    </div>
+    <div class="Logout">
+        <form action="backtologin" enctype="multipart/form-data" method="POST" id="backtologin">
+            <button type="button" id="logOutButton" onclick="Logout()">Logout</button>
+            <input type="Submit" id="backLogin"><br>
+        </form>
+    </div>
+</div>
+
+<div class="playersAndGamesArea">
+    <div class="playersArea">
+        <div class="LogedInTitleArea">
+            <h4>Loged in users:</h4>
+        </div>
+        <div class="LogedInTableArea">
+            <table class="table table-hover" id="playersTable">
+                <thead>
+                    <tr>
+                        <th>Player name</th>
+                        <th>Player Type</th>
+                    </tr>
+                </thead>
+                <tbody id="playersDetails">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="gamesArea">
+        <div class="uploadFileArea">
+            <form action="gameslist" enctype="multipart/form-data" method="POST">
+                <input type="file" name="file1" onchange="addGame()"><br>
+                <input type="Submit" value="Upload game File" id="formSubmit" onclick="addOrganizerToLastGame()"><br>
+            </form>
+            <input type="button" id="formData" onclick="addOrganizerToLastGame()">
+            <% Object errorMessage = request.getAttribute(Constants.GAME_ERROR);%>
+            <% if (errorMessage != null) {%>
+            <span class="label important"><%=errorMessage%></span>
+            <% } %>
+        </div>
+        <div class="gamesTableArea">
+            <table class="table table-hover" id="gamesTable">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Organizer</th>
+                        <th>Players count</th>
+                        <th>Total moves</th>
+                        <th>Board size</th>
+                        <th>Game Status</th>
+                    </tr>
+                </thead>
+                <tbody id="gameDetails">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<form action="movetogame" enctype="multipart/form-data" method="POST" id="moveToGameForm">
+    <input type="Submit" id="moveToGame"><br>
+</form>
+</body>
+</html>

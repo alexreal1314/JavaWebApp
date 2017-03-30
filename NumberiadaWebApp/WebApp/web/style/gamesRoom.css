@@ -1,0 +1,95 @@
+.titlesAndLogoutArea{
+    position: relative;
+    width: 600px;
+    margin: auto;
+    display: flex;
+    color: blue;
+    top: 30px;
+}
+.Logout{
+    top: 25px;
+    position: relative;
+    left: 130px;
+}
+#logOutButton{
+    width: 100px;
+    height: 40px;
+    text-size-adjust: 50px;
+}
+.playersAndGamesArea{
+    display: flex;
+    position: relative;
+    top: 35px;
+}
+.gamesArea{
+    position: relative;
+    top: 10px;
+    left: 90px;
+}
+.uploadFileArea{
+    position: relative;
+    top: 21px;
+    display: flex;
+}
+.gamesTableArea{
+
+    position: relative;
+
+    top: 30px;
+
+    color: blue;
+}
+.label.important{
+    color:#9C27B0;
+    font-size: inherit;
+}
+.playersArea{
+    left: 20px;
+    position: relative;
+}
+.LogedInTableArea{
+    position: relative;
+    top: 25px;
+}
+.playersArea{
+    left: 20px;
+    position: relative;
+
+
+    border-style: groove;
+}
+table#gamesTable {
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+h1 {
+    color: 	#87CEFA;
+    text-shadow: 0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+.gameDetails {
+    color: black;
+    text-decoration-style: solid;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+    font-weight: bold;
+}
+
+tr.gameRow {
+    border: solid thin;
+}
+
+body {
+    background: linear-gradient(90deg, white, #87CEFA);
+}

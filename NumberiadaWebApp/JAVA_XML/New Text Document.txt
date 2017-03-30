@@ -1,0 +1,4 @@
+C:\JAVA_XML\numberiada_7_advanced_random.xml
+C:\JAVA_XML\numberiada_7_advanced_explicit.xml
+
+C:\JAVA_XML\numberiada_7_basic_explicit.xml
